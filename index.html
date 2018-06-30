@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 id="title">Asterisk Park Survey Form</h1>
+<div id="form-outer">
+	<p id="description">
+		Let us know about our hospitality
+	</p>
+
+	<form id="survey-form" method="GET" action="#">
+		<div class="rowTab">
+			<div class="labels">
+				<label for="name" id="name-label">Name<sup>*</sup></label>
+			</div>
+			<div class="rightTab">
+				<input type="text" autofocus name="name" id="name" class="input-field" placeholder="Enter your name" required />
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="email" id="email-label">Email<sup>*</sup></label>
+			</div>
+			<div class="rightTab">
+				<input type="email" autofocus name="email" id="email" class="input-field" placeholder="Enter your email" required />
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="age" id="number-label">Age</label>
+			</div>
+			<div class="rightTab">
+				<input type="number" autofocus name="age" id="number" class="input-field" placeholder="Age" min="1" max="100" />
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="currentPos">Which option best describes your current role?</label>
+			</div>
+			<div class="rightTab">
+				<select id="dropdown" name="currentPos" class="dropdown">
+					<option disabled value>Select an Option</option>
+					<option  value="student">Student</option>
+			        <option value="job">Full Time Job</option>
+				    <option value="learner">Full Time Learner</option>
+				    <option value="preferNo">Prefer not to say</option>
+      				<option value="other">Other</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="userRating">How likely is that you would recommend Asterisk Park to a friend?<sup>*</sup></label>
+			</div>
+			<div class="rightTab">
+				<ul>
+					<li class="radio"><label>Definitely<input type="radio" name="radio-buttons" value="1" class="userRatings"></label></li>
+					<li class="radio"><label>Maybe<input type="radio" name="radio-buttons" value="2" class="userRatings"></label></li>
+					<li class="radio"><label>Not sure<input type="radio" name="radio-buttons" value="3" class="userRatings"></label></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="most-like">What do you like most in our car park:</label>
+			</div>
+			<div class="rightTab">
+				<select id="most-like" name="mostLike" class="dropdown">
+					<option disabled selected value>Select an option</option>
+					<option value="challenges">Security</option>
+					<option value="projects">Maintance</option>
+					<option value="community">Customer Service</option>
+					<option value="open source">Open Source</option>
+					<option value="open source">Entertainment</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="preferences">Things that should be improved in the future<br>(Check all that apply):</label>
+			</div>
+			<div class="rightTab">
+				<ul id="preferences">
+					<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Gaming Center</label></li>
+					<li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Lounge</li>
+		          	<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Pooker</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Dj</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Barbecue stand</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Swiming Pool</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Studio</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Museum</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wifi</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Event Hall</label></li>
+		          	<li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Eradicate poverty BOX</label></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="rowTab">
+			<div class="labels">
+				<label for="comments">Any Comments?</label>
+			</div>
+			<div class="rightTab">
+				<textarea id="comments" class="input-field" name="comments" placeholder="Enter your comment here..."></textarea>
+			</div>
+		</div>
+		<button id="submit" type="Submit">Submit</button>
+	</form>
+</div>
+</body>
+</html>
